@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&family=Indie+Flower&display=swap');
+
+html,body {
+  background-image: url(images/tile.jpg);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main {
+  font-family: 'David Libre', serif;
+}
+
+form {
+  position: relative;
+  margin: 0;
+}
+
+#background_form{
+  background-image: url(images/formbg.jpg);
+  background-repeat: repeat-y;
+  background-size:contain;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+  position: relative;
+  padding: 12px 8%;
+  width: 50%;
+  min-width: 200px;
+  margin: 0 24%;
+}
+
+#text {
+  background-color: unset;
+  font-size: large;
+  font-weight: 550;
+  font-size: x-large;
+  resize: none;
+}
+
+.scrol::-webkit-scrollbar {
+  width: 15px;
+}
+.scrol::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
+}
+.scrol::-webkit-scrollbar-thumb {
+  background:rgb(138, 132, 132);
+  border-radius: 20px;
+}
+.scrol::-webkit-scrollbar-thumb:hover {
+  background: red; 
+}
+.scrol:hover{
+   cursor: auto;
+}
+
+#date , #time{
+  width: 30%;
+  min-width:150px;
+  height: 25px;
+  margin:5px 5px 0 0;
+ 
+}
+
+
+#d_btn{
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button:nth-of-type(1){
+  text-align: center;
+  padding:0 6%;
+  margin:0 10px ;
+}
+
+
+section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.d1 {
+  background-image: url(images/notebg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 15px;
+  margin: 0 10px;
+  width: 200px;
+  position: relative;
+}
+
+.span_x {
+  position: absolute;
+  left:155px;
+  display: none;
+  color: red;
+  background-color: white;
+  border: 3px solid red;
+  padding: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.d1:hover .span_x {
+  display: block;
+}
+
+.text_task {
+  width: 150px;
+  height: 170px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  padding: 20px 10px;
+  margin: 5px;
+}
+
+.text_task::-webkit-scrollbar {
+  width: 8px;
+}
+
+.anim_task {
+  animation-name: task;
+  animation-duration:1.5s; 
+  animation-fill-mode: both;
+}
+
+@keyframes task {
+ from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
