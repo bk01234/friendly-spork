@@ -1,5 +1,5 @@
 
-# Task board
+# Task Board
 
 ## Task board with local saving option of text, date, and time.
 
